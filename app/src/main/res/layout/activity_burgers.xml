@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundalbprim"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context=".Burgers">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/mounte_carlo"
+        android:gravity="center_horizontal"
+        android:text="Burgers"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Primul produs-->
+
+            <TextView
+                android:id="@+id/produs1"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:padding="10dp"
+                android:text="Crispy Burger"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pret1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$7"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+            <Button
+                android:id="@+id/crispy_burger_plus"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ploos2"
+                android:onClick="crispy_burger_inc"/>
+
+            <TextView
+                android:id="@+id/crispy_burger_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/crispy_burger_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/crispy_burger_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/crispy_burger_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/minoos2"
+                android:onClick="crispy_burger_dec"/>
+
+            <TextView
+                android:id="@+id/descriere1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Black Angus, Iceberg lettuce, bacon sauce, fresh tomatoes, crispy bacon, pickles, ketchup, cheddar."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al doilea produs-->
+
+            <TextView
+                android:id="@+id/produs2"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Classic American Burger"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret2"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$6"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/classic_american_burger_plus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="classic_american_burger_inc"/>
+
+            <TextView
+                android:id="@+id/classic_american_burger_amount"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/classic_american_burger_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/classic_american_burger_minus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/classic_american_burger_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="classic_american_burger_dec"/>
+
+            <TextView
+                android:id="@+id/descriere2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Black Angus, Iceberg lettuce, mayonnaise, barbecue sauce, fresh tomatoes, crispy red onions, pickles, ketchup, cheddar."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al treilea produs-->
+
+            <TextView
+                android:id="@+id/produs3"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Golden Chicken Burger"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret3"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$6"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/golden_chicken_burger_plus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="golden_chicken_burger_inc"/>
+
+            <TextView
+                android:id="@+id/golden_chicken_burger_amount"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/golden_chicken_burger_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/golden_chicken_burger_minus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/golden_chicken_burger_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="golden_chicken_burger_dec"/>
+
+            <TextView
+                android:id="@+id/descriere3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs3"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Chicken, Iceberg lettuce, garlic sauce, browned egg, pickles, cheddar."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al patrulea produs-->
+
+            <TextView
+                android:id="@+id/produs4"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Red spicy Burger"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret4"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$8"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/red_spicy_burger_plus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="red_spicy_burger_inc"/>
+
+            <TextView
+                android:id="@+id/red_spicy_burger_amount"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/red_spicy_burger_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/red_spicy_burger_minus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/red_spicy_burger_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="red_spicy_burger_dec"/>
+
+            <TextView
+                android:id="@+id/descriere4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs4"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Black Angus, Iceberg lettuce, spicy sauce, fresh tomatoes, crispy red onions, ketchup, cheddar."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al cincilea produs-->
+
+            <TextView
+                android:id="@+id/produs5"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Veggie burger"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret5"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$6"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/veggie_burger_plus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="veggie_burger_inc"/>
+
+            <TextView
+                android:id="@+id/veggie_burger_amount"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/veggie_burger_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/veggie_burger_minus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/veggie_burger_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="veggie_burger_dec"/>
+
+            <TextView
+                android:id="@+id/descriere5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs5"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Chickpea bun, red beans and corn, tahini sauce, Iceberg lettuce, baby spinach, fresh tomatoes, crispy red onions, fresh cucumbers, barbecue sauce."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saselea produs-->
+
+            <TextView
+                android:id="@+id/produs6"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Halloumi Burger"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret6"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$7"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/halloumi_burger_plus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="halloumi_burger_inc"/>
+
+            <TextView
+                android:id="@+id/halloumi_burger_amount"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/halloumi_burger_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/halloumi_burger_minus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/halloumi_burger_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="halloumi_burger_dec"/>
+
+            <TextView
+                android:id="@+id/descriere6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs6"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Halloumi cheese, Iceberg lettuce, barbecue sauce, fresh tomatoes, crispy red onions, pickles, ketchup."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saptelea produs-->
+
+            <TextView
+                android:id="@+id/produs7"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Chief Burger"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret7"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$12"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/chief_burger_plus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="chief_burger_inc"/>
+
+            <TextView
+                android:id="@+id/chief_burger_amount"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/chief_burger_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/chief_burger_minus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/chief_burger_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="chief_burger_dec"/>
+
+            <TextView
+                android:id="@+id/descriere7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs7"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Black Angus, egg, spicy sauce, iceberg lettuce, 3 slices of bacon, 4 slices of cheese, fresh tomatoes, crispy onion, jalapeno pepper."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/order_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your order so far costs :              "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:fontFamily="@font/sweet_sans_pro_medium" />
+
+    <TextView
+        android:id="@+id/sume_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_toRightOf="@+id/order_so_far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-60dp"
+        android:text="$"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sweet_sans_pro_medium"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

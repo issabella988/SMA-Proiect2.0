@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    tools:context=".finalize_order"
+    android:background="@drawable/caiet"
+    >
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        android:text="Your order so far :"
+        android:fontFamily="@font/bohemian_typewriter"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="20dp">
+
+    <TextView
+
+        android:id="@+id/order_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="*orderul de pana acum*"
+        android:fontFamily="@font/architects_daughter"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:id="@+id/tot_p"
+        android:text="*pret pana acum*"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:padding="15dp"
+        android:layout_below="@+id/scrollView"
+        android:fontFamily="@font/architects_daughter"
+        android:layout_alignStart="@+id/scrollView" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tot_p"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tot_p"
+        android:padding="5dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Personal Preferences?"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:id="@+id/personalp"
+        android:textColor="#000000"
+        android:hint="Enter them here"
+        android:fontFamily="@font/architects_daughter"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_alignLeft="@+id/tot_p" />
+
+
+
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Main Menu"
+        android:background="#ffbc7a"
+        android:onClick="main_menu"
+        android:id="@+id/button4"
+        android:layout_below="@+id/personalp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignLeft="@+id/tot_p" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/personalp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/button4"
+        android:background="#ffbc7a"
+        android:layout_marginLeft="130dp"
+        android:onClick="send_ord"
+        android:text="Send order" />
+</RelativeLayout>

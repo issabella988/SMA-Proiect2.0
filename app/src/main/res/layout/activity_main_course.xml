@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundalbprim"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context=".MainCourse">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/mounte_carlo"
+        android:gravity="center_horizontal"
+        android:text="Main Course"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Primul produs-->
+
+            <TextView
+                android:id="@+id/produs1"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:padding="10dp"
+                android:text="Mustard-stuffed chicken"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pret1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$9"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+            <Button
+                android:id="@+id/mustard_stuffed_chicken_plus"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ploos2"
+                android:onClick="mustard_stuffed_chicken_inc"/>
+
+            <TextView
+                android:id="@+id/mustard_stuffed_chicken_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/mustard_stuffed_chicken_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/mustard_stuffed_chicken_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/mustard_stuffed_chicken_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/minoos2"
+                android:onClick="mustard_stuffed_chicken_dec"/>
+
+            <TextView
+                android:id="@+id/descriere1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="This is so good we'd be surprised if this chicken fillet recipe doesn't become a restaurant favourite."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al doilea produs-->
+
+            <TextView
+                android:id="@+id/produs2"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Parmesan spring chicken"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret2"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$10"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/parmesan_spring_chicken_plus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="parmesan_spring_chicken_inc"/>
+
+            <TextView
+                android:id="@+id/parmesan_spring_chicken_amount"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/parmesan_spring_chicken_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/parmesan_spring_chicken_minus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/parmesan_spring_chicken_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="parmesan_spring_chicken_dec"/>
+
+            <TextView
+                android:id="@+id/descriere2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="The parmesan coating gives a satisfying crunch, and the meat inside stays tender."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al treilea produs-->
+
+            <TextView
+                android:id="@+id/produs3"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Slow Cooked Pulled Pork"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret3"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$14"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/slow_cooked_pulled_pork_plus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="slow_cooked_pulled_pork_inc"/>
+
+            <TextView
+                android:id="@+id/slow_cooked_pulled_pork_amount"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/slow_cooked_pulled_pork_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/slow_cooked_pulled_pork_minus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/slow_cooked_pulled_pork_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="slow_cooked_pulled_pork_dec"/>
+
+            <TextView
+                android:id="@+id/descriere3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs3"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Pork simmered in root beer makes all the difference. Topped with your favorite BBQ sauce, it's sure to bring rave reviews."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al patrulea produs-->
+
+            <TextView
+                android:id="@+id/produs4"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Lasagna"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret4"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$13"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/lasagna_plus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="lasagna_inc"/>
+
+            <TextView
+                android:id="@+id/lasagna_amount"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/lasagna_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/lasagna_minus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/lasagna_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="lasagna_dec"/>
+
+            <TextView
+                android:id="@+id/descriere4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs4"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Lasagna pasta layered with fresh imported pecorino romano cheese, seasoned ground beef and whole milk ricotta cheese.  Baked in our homemade tomato sauce with melted mozzarella cheese on top."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al cincilea produs-->
+
+            <TextView
+                android:id="@+id/produs5"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Grilled Salmon"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret5"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$15"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/grilled_salmon_plus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="grilled_salmon_inc"/>
+
+            <TextView
+                android:id="@+id/grilled_salmon_amount"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/grilled_salmon_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/grilled_salmon_minus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/grilled_salmon_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="grilled_salmon_dec"/>
+
+            <TextView
+                android:id="@+id/descriere5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs5"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="A simple soy sauce and brown sugar marinade, with hints of lemon and garlic, are the perfect salty-sweet complement to rich salmon fillets."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saselea produs-->
+
+            <TextView
+                android:id="@+id/produs6"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Mac and Cheese"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret6"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$8"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/mac_and_cheese_plus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="mac_and_cheese_inc"/>
+
+            <TextView
+                android:id="@+id/mac_and_cheese_amount"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/mac_and_cheese_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/mac_and_cheese_minus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/mac_and_cheese_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="mac_and_cheese_dec"/>
+
+            <TextView
+                android:id="@+id/descriere6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs6"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Cottage cheese and sour cream are the unique elements to this macaroni and cheese recipe."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/order_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your order so far costs :              "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:fontFamily="@font/sweet_sans_pro_medium" />
+
+    <TextView
+        android:id="@+id/sume_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_toRightOf="@+id/order_so_far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-60dp"
+        android:text="$"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sweet_sans_pro_medium"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

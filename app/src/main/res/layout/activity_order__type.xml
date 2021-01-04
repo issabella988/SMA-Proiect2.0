@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="Order_Type"
+    android:background="@drawable/becground"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mounte_carlo"
+        android:gravity="center_horizontal"
+        android:text="Main Menu"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+
+    <ScrollView
+        android:id="@id/scrollView"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="66dp">
+
+        <LinearLayout
+            android:id="@id/layout1"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/breakfast"
+                android:onClick="breakfast" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/appetizers"
+                android:onClick="appetizers" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_below="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/soup"
+                android:onClick="soup"/>
+
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_below="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/main_course"
+                android:onClick="mainCourse"/>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_below="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pizza"
+                android:onClick="pizza"/>
+
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_below="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/burgers"
+                android:onClick="burgers"/>
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_below="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/salads"
+                android:onClick="salads"/>
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_below="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/seafood"
+                android:onClick="seafood"/>
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_below="@+id/imageButton8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/dessertt"
+                android:onClick="desserts"/>
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_below="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/non_alcoholic_drinks"
+                android:onClick="nonAlcoholicDrinks"/>
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_below="@+id/imageButton10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/alcoholic_drinks"
+                android:onClick="alcoholicDrinks"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/order_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="-45dp"
+        android:layout_marginLeft="12dp"
+        android:text="Your order so far costs  :              "
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:fontFamily="@font/sweet_sans_pro_medium" />
+
+    <TextView
+        android:id="@+id/total_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_toRightOf="@+id/order_so_far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="-45dp"
+        android:layout_marginLeft="220dp"
+        android:text="$"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/sweet_sans_pro_medium"
+        android:textSize="19sp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="-52dp"
+        android:background="@android:color/white"
+        android:text="Preview order"
+        android:onClick="fin_ord"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundalbprim"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context=".Appetizers">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/mounte_carlo"
+        android:gravity="center_horizontal"
+        android:text="Appetizers"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Primul produs-->
+
+            <TextView
+                android:id="@+id/produs1"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:padding="10dp"
+                android:text="Artichoke and Spinach Dip"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pret1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$7"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+            <Button
+                android:id="@+id/artichoke_plus"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ploos2"
+                android:onClick="artichoke_inc"/>
+
+            <TextView
+                android:id="@+id/artichoke_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/artichoke_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/artichoke_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/artichoke_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/minoos2"
+                android:onClick="artichoke_dec" />
+
+            <TextView
+                android:id="@+id/descriere1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Tuscan bread served with a delicious blend of spinach, artichoke, and cream."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al doilea produs-->
+
+            <TextView
+                android:id="@+id/produs2"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Bruschetta"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret2"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$8"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/bruschetta_plus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="bruschetta_inc"/>
+
+            <TextView
+                android:id="@+id/bruschetta_amount"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bruschetta_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/bruschetta_minus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/bruschetta_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="bruschetta_dec"/>
+
+            <TextView
+                android:id="@+id/descriere2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Grilled country bread with Roma tomatoes, olive oil, garlic and basil."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al treilea produs-->
+
+            <TextView
+                android:id="@+id/produs3"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Stuffed Mushrooms"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret3"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$7"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/stuffed_mushrooms_plus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="stuffed_mushrooms_inc"/>
+
+            <TextView
+                android:id="@+id/stuffed_mushrooms_amount"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/stuffed_mushrooms_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/stuffed_mushrooms_minus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/stuffed_mushrooms_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="stuffed_mushrooms_dec"/>
+
+            <TextView
+                android:id="@+id/descriere3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs3"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Mushrooms caps baked with a filling of three choice cheeses, breadcrumbs and clams."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al patrulea produs-->
+
+            <TextView
+                android:id="@+id/produs4"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Fried Calamari"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret4"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$9"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/fried_calamari_plus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="fried_calamari_inc"/>
+
+            <TextView
+                android:id="@+id/fried_calamari_amount"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/fried_calamari_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/fried_calamari_minus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/fried_calamari_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="fried_calamari_dec"/>
+
+            <TextView
+                android:id="@+id/descriere4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs4"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Breaded calamari, lightly fried in canola oil. Served with a side of marinara."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al cincilea produs-->
+
+            <TextView
+                android:id="@+id/produs5"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Four Cheese Garlic Bread"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret5"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$4"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/four_cheese_garlic_bread_plus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="four_cheese_garlic_bread_inc"/>
+
+            <TextView
+                android:id="@+id/four_cheese_garlic_bread_amount"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/four_cheese_garlic_bread_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/four_cheese_garlic_bread_minus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/four_cheese_garlic_bread_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="four_cheese_garlic_bread_dec"/>
+
+            <TextView
+                android:id="@+id/descriere5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs5"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Toasted French bread topped with romano, cheddar, jack and parmesan, with a light layer of roasted garlic butter."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saselea produs-->
+
+            <TextView
+                android:id="@+id/produs6"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Shrimp Scampi"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret6"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$10"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/shrimp_scampi_plus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="shrimp_scampi_inc"/>
+
+            <TextView
+                android:id="@+id/shrimp_scampi_amount"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/shrimp_scampi_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/shrimp_scampi_minus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/shrimp_scampi_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="shrimp_scampi_dec"/>
+
+            <TextView
+                android:id="@+id/descriere6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs6"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Jumbo shrimp sauteed in white wine, butter and garlic."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saptelea produs-->
+
+            <TextView
+                android:id="@+id/produs7"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="French Fries"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret7"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$5"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/french_fries_plus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="french_fries_inc"/>
+
+            <TextView
+                android:id="@+id/french_fries_amount"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/french_fries_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/french_fries_minus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/french_fries_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="french_fries_dec"/>
+
+            <TextView
+                android:id="@+id/descriere7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs7"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Hand cut wedges of Yukon Gold potatoes fried in canola oil and tossed with truffle sea salt.."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/order_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your order so far costs :              "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:fontFamily="@font/sweet_sans_pro_medium" />
+
+    <TextView
+        android:id="@+id/sume_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_toRightOf="@+id/order_so_far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-60dp"
+        android:text="$"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sweet_sans_pro_medium"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

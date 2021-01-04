@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundalbprim"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context=".Desserts">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/mounte_carlo"
+        android:gravity="center_horizontal"
+        android:text="Dessert"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Primul produs-->
+
+            <TextView
+                android:id="@+id/produs1"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:padding="10dp"
+                android:text="Chocolate-Chip Cookies"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pret1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$3"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+            <Button
+                android:id="@+id/chocolate_chip_cookies_plus"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/ploos2"
+                android:onClick="chocolate_chip_cookies_inc"/>
+
+            <TextView
+                android:id="@+id/chocolate_chip_cookies_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/chocolate_chip_cookies_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/chocolate_chip_cookies_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/chocolate_chip_cookies_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/minoos2"
+                android:onClick="chocolate_chip_cookies_dec"/>
+
+            <TextView
+                android:id="@+id/descriere1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="The flavor and texture of these cookies is unparalleled."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al doilea produs-->
+
+            <TextView
+                android:id="@+id/produs2"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Vanilla Cheesecake"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret2"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$5"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/vanilla_cheesecake_plus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="vanilla_cheesecake_inc"/>
+
+            <TextView
+                android:id="@+id/vanilla_cheesecake_amount"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/vanilla_cheesecake_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/vanilla_cheesecake_minus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/vanilla_cheesecake_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="vanilla_cheesecake_dec"/>
+
+            <TextView
+                android:id="@+id/descriere2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="In this rich cheesecake, we use the entire vanilla bean, so none of it is wasted."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al treilea produs-->
+
+            <TextView
+                android:id="@+id/produs3"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Amaretto Apple Cupcakes"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret3"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$4"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/amaretto_apple_cupcakes_plus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="amaretto_apple_cupcakes_inc"/>
+
+            <TextView
+                android:id="@+id/amaretto_apple_cupcakes_amount"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/amaretto_apple_cupcakes_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/amaretto_apple_cupcakes_minus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/amaretto_apple_cupcakes_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="amaretto_apple_cupcakes_dec"/>
+
+            <TextView
+                android:id="@+id/descriere3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs3"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Top tender apple cupcakes with a sweet and crunchy topping of brown sugar and almonds."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al patrulea produs-->
+
+            <TextView
+                android:id="@+id/produs4"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Tiramisu"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret4"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$5"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/tiramisu_plus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="tiramisu_inc"/>
+
+            <TextView
+                android:id="@+id/tiramisu_amount"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tiramisu_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/tiramisu_minus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/tiramisu_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="tiramisu_dec"/>
+
+            <TextView
+                android:id="@+id/descriere4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs4"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="With layers of ladyfingers, coffee, mascarpone cheese, and grated chocolate, traditional tiramisu is a cross between a trifle and bread pudding."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al cincilea produs-->
+
+            <TextView
+                android:id="@+id/produs5"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Cinnamon-Apple Cake"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret5"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$4"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/cinnamon_apple_cake_plus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="cinnamon_apple_cake_inc"/>
+
+            <TextView
+                android:id="@+id/cinnamon_apple_cake_amount"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/cinnamon_apple_cake_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/cinnamon_apple_cake_minus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/cinnamon_apple_cake_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="cinnamon_apple_cake_dec"/>
+
+            <TextView
+                android:id="@+id/descriere5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs5"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="This is one of our most loved recipes and can be served as dessert or a breakfast coffee cake."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saselea produs-->
+
+            <TextView
+                android:id="@+id/produs6"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Pumpkin Pie Pudding"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret6"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$4"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/pumpkin_pie_pudding_plus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="pumpkin_pie_pudding_inc"/>
+
+            <TextView
+                android:id="@+id/pumpkin_pie_pudding_amount"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/pumpkin_pie_pudding_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/pumpkin_pie_pudding_minus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/pumpkin_pie_pudding_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="pumpkin_pie_pudding_dec"/>
+
+            <TextView
+                android:id="@+id/descriere6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs6"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Pumpkin Pie Pudding straight out of the slow cooker for a warm and festive fall treat."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saptelea produs-->
+
+            <TextView
+                android:id="@+id/produs7"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Chocolate-Cherry Sorbet"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret7"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$5"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/chocolate_cherry_sorbet_plus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="chocolate_cherry_sorbet_inc"/>
+
+            <TextView
+                android:id="@+id/chocolate_cherry_sorbet_amount"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/chocolate_cherry_sorbet_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/chocolate_cherry_sorbet_minus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/chocolate_cherry_sorbet_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="chocolate_cherry_sorbet_dec"/>
+
+            <TextView
+                android:id="@+id/descriere7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs7"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Tart-sweet cherry and strong dark chocolate flavors meld beautifully in this surprisingly rich sorbet crowned with juicy fresh cherries."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al optulea produs-->
+
+            <TextView
+                android:id="@+id/produs8"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Lemon Tart"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret8"
+                android:layout_below="@+id/descriere7"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$4"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/lemon_tart_plus"
+                android:layout_below="@+id/descriere7"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ploos2"
+                android:onClick="lemon_tart_inc"/>
+
+            <TextView
+                android:id="@+id/lemon_tart_amount"
+                android:layout_below="@+id/descriere7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/lemon_tart_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/lemon_tart_minus"
+                android:layout_below="@+id/descriere7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/lemon_tart_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/minoos2"
+                android:onClick="lemon_tart_dec"/>
+
+            <TextView
+                android:id="@+id/descriere8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs8"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Sinful, rich and creamy, this recipe is the perfect finish to a meal."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/order_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your order so far costs :              "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:fontFamily="@font/sweet_sans_pro_medium" />
+
+    <TextView
+        android:id="@+id/sume_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_toRightOf="@+id/order_so_far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-60dp"
+        android:text="$"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sweet_sans_pro_medium"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

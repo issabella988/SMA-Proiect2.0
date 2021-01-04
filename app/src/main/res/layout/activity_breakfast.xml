@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundalbprim"
+    android:paddingBottom="1dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context=".Breakfast">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/mounte_carlo"
+        android:gravity="center_horizontal"
+        android:text="Breakfast"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Primul produs-->
+
+            <TextView
+                android:id="@+id/produs1"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:padding="10dp"
+                android:text="Scrambled Eggs"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pret1"
+                android:layout_width="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$4"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+            <Button
+                android:id="@+id/scrambled_eggs_plus"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:onClick="scrambled_eggs_inc"
+                android:background="@drawable/ploos2" />
+
+            <TextView
+                android:id="@+id/scrambled_eggs_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/scrambled_eggs_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/scrambled_eggs_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/scrambled_eggs_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="8dp"
+                android:onClick="scrambled_eggs_dec"
+                android:background="@drawable/minoos2" />
+
+            <TextView
+                android:id="@+id/descriere1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Scrambled eggs is a dish made from eggs stirred or beaten together in a pan while being gently heated, with salt, butter and other spices."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al doilea produs-->
+
+            <TextView
+                android:id="@+id/produs2"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Denver Omelet"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret2"
+                android:layout_below="@+id/descriere1"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$3"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/denver_plus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:onClick="denver_inc"
+                android:background="@drawable/ploos2" />
+
+            <TextView
+                android:id="@+id/denver_amount"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/denver_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/denver_minus"
+                android:layout_below="@+id/descriere1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/denver_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:onClick="denver_dec"
+                android:background="@drawable/minoos2" />
+
+            <TextView
+                android:id="@+id/descriere2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="This is one of the best and most famous American omelet."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al treilea produs-->
+
+            <TextView
+                android:id="@+id/produs3"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere2"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Sausage and cheese Omelet"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret3"
+                android:layout_below="@+id/descriere2"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$4"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/sausage_omelet_plus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:onClick="sausage_omelet_inc"
+                android:background="@drawable/ploos2" />
+
+            <TextView
+                android:id="@+id/sausage_omelet_amount"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/sausage_omelet_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/sausage_omelet_minus"
+                android:layout_below="@+id/descriere2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/sausage_omelet_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:onClick="sausage_omelet_dec"
+                android:background="@drawable/minoos2" />
+
+            <TextView
+                android:id="@+id/descriere3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs3"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="A sausage and cheese omelet is a nutritious option to kick off your day."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al patrulea produs-->
+
+            <TextView
+                android:id="@+id/produs4"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Italian Frittata"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret4"
+                android:layout_below="@+id/descriere3"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$5"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/frittata_plus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:onClick="frittata_inc"
+                android:background="@drawable/ploos2" />
+
+            <TextView
+                android:id="@+id/frittata_amount"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/frittata_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/frittata_minus"
+                android:layout_below="@+id/descriere3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/frittata_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:onClick="frittata_dec"
+                android:background="@drawable/minoos2" />
+
+            <TextView
+                android:id="@+id/descriere4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs4"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Wonderfully delicious combination of Italian sausage, a bit of garlic, marinara or Italian meat sauce and cheese."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al cincilea produs-->
+
+            <TextView
+                android:id="@+id/produs5"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="French Toast"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret5"
+                android:layout_below="@+id/descriere4"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$3"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/french_toast_plus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:onClick="french_toast_inc"
+                android:background="@drawable/ploos2" />
+
+            <TextView
+                android:id="@+id/french_toast_amount"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/french_toast_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/french_toast_minus"
+                android:layout_below="@+id/descriere4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/french_toast_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:onClick="french_toast_dec"
+                android:background="@drawable/minoos2" />
+
+            <TextView
+                android:id="@+id/descriere5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs5"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="Bread dipped in a mixture of egg and milk and sautéed."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saselea produs-->
+
+            <TextView
+                android:id="@+id/produs6"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere5"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="Chicken and Mushroom Quiche"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret6"
+                android:layout_below="@+id/descriere5"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$5"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/chicken_quiche_plus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:onClick="chicken_quiche_inc"
+                android:background="@drawable/ploos2" />
+
+            <TextView
+                android:id="@+id/chicken_quiche_amount"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/chicken_quiche_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/chicken_quiche_minus"
+                android:layout_below="@+id/descriere5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/chicken_quiche_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:onClick="chicken_quiche_dec"
+                android:background="@drawable/minoos2" />
+
+            <TextView
+                android:id="@+id/descriere6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs6"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="An ideal breakfast treat for people who do not care for the more traditional breakfast meats such as bacon, sausage or ham."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--Al saptelea produs-->
+
+            <TextView
+                android:id="@+id/produs7"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sweet_sans_pro_medium"
+                android:text="English breakfast"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/pret7"
+                android:layout_below="@+id/descriere6"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/produs1"
+                android:layout_marginLeft="12dp"
+                android:layout_width="35dp"
+                android:gravity="right"
+                android:fontFamily="@font/sweet_sans_pro_light"
+                android:text="$6"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/english_bf_plus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:onClick="english_bf_inc"
+                android:background="@drawable/ploos2" />
+
+            <TextView
+                android:id="@+id/english_bf_amount"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/english_bf_plus"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="17dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/english_bf_minus"
+                android:layout_below="@+id/descriere6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/english_bf_amount"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="15dp"
+                android:onClick="english_bf_dec"
+                android:background="@drawable/minoos2" />
+
+            <TextView
+                android:id="@+id/descriere7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/produs7"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sweet_sans_pro_light_italic"
+                android:padding="10dp"
+                android:text="A breakfast consisting of cooked food such as bacon, eggs, sausages, and tomatoes. It also includes toast and tea or coffee."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/order_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your order so far costs :              "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:fontFamily="@font/sweet_sans_pro_medium" />
+
+    <TextView
+        android:id="@+id/sume_so_far"
+        android:layout_below="@+id/scrollView"
+        android:layout_toRightOf="@+id/order_so_far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-40dp"
+        android:text="$"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/sweet_sans_pro_medium"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>
